@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/churrascometro.css">
+    <script defer src="js/churrascometro.js"></script>
+    <title>Churrascômetro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-title">
+            <h1>Churrascômetro</h1> <img class="imgChurrasqueira" src="img/outdoor_grill.png" alt="Churrasqueira">
+        </div>
+        <h2>Veja o quanto você precisa para realizar um churrasco</h2>
+        <label for="inAdultos">Adultos</label>
+        <input type="number" id="inAdultos" placeholder="Número de adultos" autofocus>
+        <label for="inCriancas">Crianças</label>
+        <input type="number" id="inCriancas" placeholder="Número de crianças">
+        <label for="inHoras">Duração do Churrasco</label>
+        <input type="number" id="inHoras" placeholder="Duração do churrasco">
+        <div id="adv"></div>
+        <button id="btCalcular">Calcular Consumo</button>
+        <div id="containerResposta" class="oculto">
+            <h3 class="transparente">Seu churrasco precisará de:</h3>
+            <p id="outCarne" class="transparente"></p>
+            <p id="outCerveja" class="transparente"></p>
+            <p id="outRefri" class="transparente"></p>
+            <!-- <div class="transparente">
+                <p>80g de Carne por hora (+6 horas 110g)</p>
+                <p>200ml de Refri por hora (+6 horas 250ml)</p>
+                <p>240ml de Cerveja por hora (+6 horas 330ml)</p>
+                <p>Crianças consomem metade dos valores listados acima</p>
+            </div> -->
+        </div>
+    </div>
+</body>
+
+</html>
